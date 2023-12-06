@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 <form>
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <img src=img/logoKamadoing.png style="width: 200px;">
-                    <a href="index.php">Terug naar Home</a class="link-dangerous">
+                    <a href="index.php">Terug naar Home</a class="link-danger">
                   </div>
                             <div class="mb-2 mt-5">
                                 <input type="username" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
