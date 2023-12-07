@@ -48,7 +48,7 @@
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
                     <article class="price-section">
-                        <span>$5,50</span>
+                        <span>€5,50</span>
                         <span>Koop Nu</span>
                     </article>
                 </article>
@@ -60,7 +60,7 @@
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
                     <article class="price-section">
-                        <span>$5,50</span>
+                        <span>€5,50</span>
                         <span>Koop Nu</span>
                     </article>
                 </article>
@@ -72,7 +72,7 @@
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
                     <article class="price-section">
-                        <span>$5,50</span>
+                        <span>€5,50</span>
                         <span>Koop Nu</span>
                     </article>
                 </article>
@@ -84,7 +84,7 @@
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
                     <article class="price-section">
-                        <span>$5,50</span>
+                        <span>€5,50</span>
                         <span>Koop Nu</span>
                     </article>
                 </article>
