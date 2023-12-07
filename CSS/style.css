@@ -524,13 +524,3 @@ section{
     text-align: center;
   }
 
- .Home-button {
-    color: red;
-    text-decoration: none;
-    margin-left: 13vw;
-    margin-top: -5vw;
-}
-
-.Home-button-r:hover {
-    color: black;
-}
