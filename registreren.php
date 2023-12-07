@@ -32,6 +32,7 @@ require_once 'dbconnect.php';
                 <form>
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <img src=img/logoKamadoing.png style="width: 200px;">
+                    <a href="index.php" class="Home-button-r">Terug naar Home</a>
                   </div>
                   <div class="mb-2 mt-5">
                                 <input type="username" name="gebruikerNaam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
