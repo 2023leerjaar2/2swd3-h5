@@ -36,7 +36,7 @@ require "helper.php";
                 <form>
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <img src=img/logoKamadoing.png style="width: 200px;">
-                    <a href="index.php" class="Home-button">Terug naar home</a>
+                    <a href="index.php" class="home-link">Terug naar home</a>
                   </div>
                   <div class="mb-2 mt-5">
                                 <input type="username" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">

@@ -5,13 +5,8 @@ body{
     background-color: red;
 }
 
-.Home-button {
+.home-link {
     color: red;
     text-decoration: none;
-    margin-left: 13vw;
-    margin-top: -5vw;
-}
-
-.Home-button:hover {
-    color: black;
+    margin-left: 10vw;
 }
