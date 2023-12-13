@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $gebruikersnaam = $_POST['Naam'];
     $wachtwoord = $_POST['Wachtwoord'];
 
-    $stmt = $conn->prepare("SELECT * FROM gebruiker WHERE Naam = ? AND Wachtwoord = ?");
+    $stmt = $conn->prepare("SELECT * FROM gebruikers WHERE Naam = ? AND Wachtwoord = ?");
     $stmt->bind_param("ss", $gebruikerNaam, $wachtwoord);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -39,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             header("Location: index.php");
             exit();
         } elseif ($rol === "student") {
-            // Redirect naar dezelfde pagina (studenten.php) om de sessie te behouden
             header("Location: index.php");
             exit();
         } else {
@@ -70,6 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 <form>
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <img src=img/logoKamadoing.png style="width: 200px;">
+                    <a href="index.php" class="Home-button">Terug naar Home</a>
                   </div>
                             <div class="mb-2 mt-5">
                                 <input type="username" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">

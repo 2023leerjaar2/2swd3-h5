@@ -31,13 +31,13 @@
     <section class="form">
     <form method="POST">
         <h2>Contact Form</h2>
-        <label for="naam">Naam:</label>
+        <label for="naam" class="text-form">Naam:</label>
         <input type="text" name="naam" required>
         
-        <label for="achterbaam">Achternaam:</label>
-        <input type="text" name="achterbaam" required>
+        <label for="achterbaam" class="text-form">Achternaam:</label>
+        <input type="text" name="achterbaam" class="text-form" required>
         
-        <label for="beschrijving">Beschrijving:</label>
+        <label for="beschrijving" class="text-form">Beschrijving:</label>
         <input type="text" name="beschrijving" required>
         
         <input type="submit" name="submit" value="Submit">

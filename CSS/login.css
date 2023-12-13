@@ -4,3 +4,14 @@ body{
 .rood{
     background-color: red;
 }
+
+.Home-button {
+    color: red;
+    text-decoration: none;
+    margin-left: 13vw;
+    margin-top: -5vw;
+}
+
+.Home-button:hover {
+    color: black;
+}
