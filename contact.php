@@ -39,13 +39,13 @@ require "helper.php";
     <form method="POST">
         <h2>Contact Form</h2>
         <label for="naam" class="text-form">Naam:</label>
-        <input type="text" name="contact_naam" required>
+        <input type="text" name="naam" required>
         
         <label for="achternaam" class="text-form">Achternaam:</label>
-        <input type="text" name="contact_achternaam" class="text-form" required>
+        <input type="text" name="achternaam" class="text-form" required>
         
         <label for="beschrijving" class="text-form">Beschrijving:</label>
-        <input type="text" name="contact_beschrijving" required>
+        <input type="text" name="beschrijving" required>
         
         <input type="submit" name="submit" value="Submit">
     </form>
