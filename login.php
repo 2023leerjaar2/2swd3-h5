@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $gebruikersnaam = $_POST['Naam'];
     $wachtwoord = $_POST['Wachtwoord'];
 
-    $stmt = $conn->prepare("SELECT * FROM gebruiker WHERE Naam = ? AND Wachtwoord = ?");
+    $stmt = $conn->prepare("SELECT * FROM gebruikers WHERE Naam = ? AND Wachtwoord = ?");
     $stmt->bind_param("ss", $gebruikerNaam, $wachtwoord);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -39,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             header("Location: index.php");
             exit();
         } elseif ($rol === "student") {
-            // Redirect naar dezelfde pagina (studenten.php) om de sessie te behouden
             header("Location: index.php");
             exit();
         } else {
