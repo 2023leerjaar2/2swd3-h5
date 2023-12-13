@@ -1,8 +1,7 @@
 <?php
 require "helper.php";
-?>
-<?php
-        if(isset($_POST['submit'])){
+
+      if(isset($_POST['submit'])){
             register($_POST);
         }   
 ?>
@@ -40,7 +39,7 @@ require "helper.php";
                     <a href="index.php" class="Home-button">Terug naar home</a>
                   </div>
                   <div class="mb-2 mt-5">
-                                <input type="username" name="gebruikerNaam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
+                                <input type="username" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text input-info-text"></div>
                             </div>
 

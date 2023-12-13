@@ -1,4 +1,9 @@
-<?php require "dbconnect.php";?>
+<?php
+require "helper.php";
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    login($_POST); }
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -14,45 +19,6 @@
     <link id="mainStyle" rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-<?php
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    $gebruikersnaam = $_POST['Naam'];
-    $wachtwoord = $_POST['Wachtwoord'];
-
-    $stmt = $conn->prepare("SELECT * FROM gebruikers WHERE Naam = ? AND Wachtwoord = ?");
-    $stmt->bind_param("ss", $gebruikerNaam, $wachtwoord);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows == 1) {
-        $row = $result->fetch_assoc();
-        $rol = $row['role'];
-
-        session_start();
-        $_SESSION['Gebruiker_id'] = $row['Gebruiker_id'];
-        $_SESSION['Naam'] = $gebruikerNaam ;
-        $_SESSION['Wachtwoord'] = $wachtwoord;
-        $_SESSION['loggedIn'] = true;
-
-        if ($rol === "admin") {
-            header("Location: index.php");
-            exit();
-        } elseif ($rol === "student") {
-            header("Location: index.php");
-            exit();
-        } else {
-            echo '<script>alert("Onbekende rol.")</script>';
-        }
-    } else {
-        echo '<script>alert("Inloggegevens zijn onjuist, probeer het opnieuw.")</script>';
-    }
-
-    $stmt->close();
-}
-?>
-
-
 <form method="POST">
 <section class="vh-100" style="background-color: #cecece;">
   <div class="container py-5 h-100">
@@ -69,15 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 <form>
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <img src=img/logoKamadoing.png style="width: 200px;">
-                    <a href="index.php" class="Home-button">Terug naar Home</a>
                   </div>
                             <div class="mb-2 mt-5">
-                                <input type="username" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
+                                <input type="Name" name="Naam" class="form-control auth-input" placeholder="Gebruikersnaam" aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text input-info-text"></div>
                             </div>
 
                             <div class="mb-2">
-                                <input type="password" name="Wachtwoord" class="form-control auth-input" placeholder="Wachtwoord">
+                                <input type="Wachtwoord" name="Wachtwoord" class="form-control auth-input" placeholder="Wachtwoord">
                             </div>
 
                   <div class="pt-1 mb-4">
