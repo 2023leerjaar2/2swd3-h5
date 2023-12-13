@@ -1,12 +1,6 @@
-body{
-    background-color: rgb(241, 241, 241);
-}
-.rood{
-    background-color: red;
-}
-
 .home-link {
     color: red;
     text-decoration: none;
-    margin-left: 10vw;
+    margin-left: 12vw;
+    margin-bottom: 5vw;
 }

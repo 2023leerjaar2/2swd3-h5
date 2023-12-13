@@ -1,4 +1,11 @@
-<?php require "dbconnect.php"; ?>
+<?php
+require "helper.php";
+
+      if(isset($_POST['submit'])){
+            contact($_POST);
+        }   
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -32,39 +39,17 @@
     <form method="POST">
         <h2>Contact Form</h2>
         <label for="naam" class="text-form">Naam:</label>
-        <input type="text" name="naam" required>
+        <input type="text" name="contact_naam" required>
         
-        <label for="achterbaam" class="text-form">Achternaam:</label>
-        <input type="text" name="achterbaam" class="text-form" required>
+        <label for="achternaam" class="text-form">Achternaam:</label>
+        <input type="text" name="contact_achternaam" class="text-form" required>
         
         <label for="beschrijving" class="text-form">Beschrijving:</label>
-        <input type="text" name="beschrijving" required>
+        <input type="text" name="contact_beschrijving" required>
         
         <input type="submit" name="submit" value="Submit">
     </form>
 </section>
-
-<?php 
-   if (isset($_POST['submit'])) {
-    if (!empty($_POST['naam']) && !empty($_POST['achterbaam']) && !empty($_POST['beschrijving'])) {
-        $naam = $_POST["naam"];
-        $achterbaam = $_POST["achterbaam"];
-        $beschrijving = $_POST["beschrijving"];
-        
-        $sql = "INSERT INTO `contactberichten` VALUES (NULL, '$naam', '$achterbaam', '$beschrijving')";
-        try {
-            $conn->query($sql);
-            $conn->close();
-            echo "Uw bericht is verzonden";
-        } catch (Exception $e) {
-            $error = "Niet Gelukt Probeer het opnieuw";
-            die($error);
-        }
-    } else {
-        echo "Vul alle velden in";
-    }
-}
-    ?>
 
     <footer>
         <article class="innerItem">
