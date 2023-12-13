@@ -53,4 +53,29 @@ function login($data){
          }
       }
     }
+
+
+    
+function contact($data){
+
+    if (isset($data['submit'])) {
+        if (!empty($data['naam']) && !empty($data['achternaam']) && !empty($data['beschrijving'])) {
+            $contact_naam = $data["naam"];
+            $contact_achternaam = $data["achternaam"];
+            $contact_beschrijving = $data["beschrijving"];
+            
+            $sql = "INSERT INTO `contactberichten` VALUES (NULL, '$contact_naam', '$contact_achternaam', '$contact_beschrijving')";
+            try {
+                connect()->query($sql);
+                connect()->close();
+                echo '<script>alert("Uw Bericht is verzonden.")</script>';
+            } catch (Exception $e) {
+                $error = "Niet Gelukt Probeer het opnieuw";
+                die($error);
+            }
+        } else {
+            echo "Vul alle velden in";
+        }
+    }
+}
 ?>
