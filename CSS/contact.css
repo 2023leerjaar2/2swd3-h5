@@ -93,16 +93,13 @@ header .navbar a{
   color: #fff;
 }
 
- 
-
 form {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 400px;
-  margin-top: 50px;
-
+  margin-left: 35vw;
 }
 
 form input {
