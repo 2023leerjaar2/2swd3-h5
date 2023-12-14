@@ -20,7 +20,7 @@
         <nav class="navbar">
             <a href="#Home" class="active">Home</a>
             <a href="#Recepten">Recepten</a>
-            <a href="#Winkel">Winkel</a>
+            <a href="#Kookboeken">Kookboeken</a>
             <a href="#Review">Review</a>
             <a href="Contact.php">Contact</a>
         </nav>
@@ -31,8 +31,7 @@
             <h5>Meest Gekozen in dit seizoen</h5>
             <h2>BBQ Bacon Burger</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam deleniti tempore quae iusto dolores laboriosam suscipit. In ullam odio non. lorem15</p>
-            <button class="btn">Bestel Nu</button>
-            <button class="btn btn-explore">Bekijk Meer</button>
+            <a href="#Recepten"><button class="btn">Bekijken</button></a>
         </article>
         <article class="image-section">
             <img src="IMG/pngegg.png" alt="">
@@ -47,10 +46,6 @@
                 <article class="inner-text">
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
-                    <article class="price-section">
-                        <span>€5,50</span>
-                        <span>Koop Nu</span>
-                    </article>
                 </article>
             </article>
 
@@ -59,10 +54,6 @@
                 <article class="inner-text">
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
-                    <article class="price-section">
-                        <span>€5,50</span>
-                        <span>Koop Nu</span>
-                    </article>
                 </article>
             </article>
 
@@ -71,10 +62,6 @@
                 <article class="inner-text">
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
-                    <article class="price-section">
-                        <span>€5,50</span>
-                        <span>Koop Nu</span>
-                    </article>
                 </article>
             </article>
 
@@ -83,10 +70,6 @@
                 <article class="inner-text">
                     <h2>Gegrilde Vlees</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
-                    <article class="price-section">
-                        <span>€5,50</span>
-                        <span>Koop Nu</span>
-                    </article>
                 </article>
             </article>
     </article>
@@ -94,7 +77,7 @@
 
 
     
-    <section id="Winkel" class="kookboeken section-bg">
+    <section id="Kookboeken" class="kookboeken section-bg">
         <div class="container" data-aos="fade-up">
 
             <h2 class="heading">Onze <span>kookboeken</span></h2>
@@ -139,7 +122,7 @@
                             <h4>William Anderson</h4>
                             <span>Cook</span>
                             <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt.
-                                Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                            Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
                         </div>
                     </div>
                 </div>
@@ -240,10 +223,10 @@
         <article class="innerItem">
             <h2>Kama <span>Doing</span></h2>
             <article class="textbar">
-                <a href="#">Home</a>
-                <a href="#">Recepten</a>
-                <a href="#">Winkel</a>
-                <a href="#">Review</a>
+                <a href="#Home">Home</a>
+                <a href="#Recepten">Recepten</a>
+                <a href="#Kookboeken">Kookboeken</a>
+                <a href="#Review">Review</a>
                 <a href="contact.php">Contact</a>
             </article>
             <article class="footer-icon">
