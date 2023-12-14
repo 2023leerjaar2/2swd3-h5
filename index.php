@@ -139,7 +139,7 @@
             <article class="review-text">
                 <h2>Johan B.</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab fugiat quas quibusdam, harum debitis sunt totam temporibus doloribus aspernatur dicta quod magnam, inventore fuga necessitatibus cum quaerat placeat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reiciendis?</p>
-                <h5>Worker</h5>
+                <h5>Werkt bij BBQ & Co</h5>
                 <article class="star">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -153,9 +153,9 @@
         <article class="review-image-section">
            <img src="IMG/review2.jpeg" alt="">
            <article class="review-text">
-               <h2>Johan B.</h2>
+               <h2>Hailey</h2>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab fugiat quas quibusdam, harum debitis sunt totam temporibus doloribus aspernatur dicta quod magnam, inventore fuga necessitatibus cum quaerat placeat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reiciendis?</p>
-               <h5>Worker</h5>
+               <h5>Student</h5>
                <article class="star">
                    <i class='bx bxs-star'></i>
                    <i class='bx bxs-star'></i>
@@ -169,9 +169,9 @@
         <article class="review-image-section">
            <img src="IMG/review3.jpeg" alt="">
            <article class="review-text">
-               <h2>Johan B.</h2>
+               <h2>Matilda</h2>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab fugiat quas quibusdam, harum debitis sunt totam temporibus doloribus aspernatur dicta quod magnam, inventore fuga necessitatibus cum quaerat placeat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reiciendis?</p>
-               <h5>Worker</h5>
+               <h5>Dokter Bij Ziekenhuis Saffier</h5>
                <article class="star">
                    <i class='bx bxs-star'></i>
                    <i class='bx bxs-star'></i>
@@ -185,9 +185,9 @@
         <article class="review-image-section">
            <img src="IMG/review4.jpeg" alt="">
            <article class="review-text">
-               <h2>Johan B.</h2>
+               <h2>Baljeet</h2>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab fugiat quas quibusdam, harum debitis sunt totam temporibus doloribus aspernatur dicta quod magnam, inventore fuga necessitatibus cum quaerat placeat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reiciendis?</p>
-               <h5>Worker</h5>
+               <h5>Software Developer</h5>
                <article class="star">
                    <i class='bx bxs-star'></i>
                    <i class='bx bxs-star'></i>
@@ -201,9 +201,9 @@
         <article class="review-image-section">
            <img src="IMG/review5.jpeg" alt="">
            <article class="review-text">
-               <h2>Johan B.</h2>
+               <h2>Sophie</h2>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab fugiat quas quibusdam, harum debitis sunt totam temporibus doloribus aspernatur dicta quod magnam, inventore fuga necessitatibus cum quaerat placeat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reiciendis?</p>
-               <h5>Worker</h5>
+               <h5>Student</h5>
                <article class="star">
                    <i class='bx bxs-star'></i>
                    <i class='bx bxs-star'></i>
