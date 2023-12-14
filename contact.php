@@ -41,7 +41,7 @@ require "helper.php";
         <input type="text" name="naam" required>
         
         <label for="achternaam" class="text-form">Achternaam:</label>
-        <input type="text" name="achternaam" class="text-form" required>
+        <input type="text" name="achternaam" required>
         
         <label for="beschrijving" class="text-form">Beschrijving:</label>
         <input type="text" name="beschrijving" required>
