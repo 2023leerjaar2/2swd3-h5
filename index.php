@@ -30,7 +30,7 @@
         <article class="text-content">
             <h5>Meest Gekozen in dit seizoen</h5>
             <h2>BBQ Bacon Burger</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam deleniti tempore quae iusto dolores laboriosam suscipit. In ullam odio non. lorem15</p>
+            <p>Spare ribs, smaakvol gemarineerd en langzaam gegaard tot perfectie, beloven sappig vlees dat van het bot valt. Een heerlijke delicatesse voor liefhebbers van hartige ribbetjes.</p>
             <a href="#Recepten"><button class="btn">Bekijken</button></a>
         </article>
         <article class="image-section">
@@ -38,39 +38,45 @@
             <article class="shadow"></article>
         </article>
     </section>
+
+
     <section class="Recept-section" id="Recepten"> 
         <h2 class="heading">Onze <span>Recepten</span></h2>
         <article class="receptGallery">
             <article class="food-image">
-                <img src="IMG/bbq.png" alt="">
+                <img src="IMG/burger.png" alt="">
                 <article class="inner-text">
-                    <h2>Gegrilde Vlees</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
+                    <h2>Bacon Burger</h2>
+                    <p> Een bacon burger, perfect gegrild en gestapeld met knapperige bacon, gesmolten kaas en verse groenten</p>
                 </article>
+                <a href="PHP/burger.php"><button class="btn">Ondekken</button></a>
             </article>
 
             <article class="food-image">
-                <img src="IMG/p7.png" alt="">
+                <img src="IMG/chicken.png" alt="">
                 <article class="inner-text">
-                    <h2>Gegrilde Vlees</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
+                    <h2>Chicken Wings</h2>
+                    <p> Krokante chicken wings, gekruid en bedekt met heerlijke sauzen, bieden een bevredigende smaakexplosie.</p>
                 </article>
+                <a href="PHP/chicken.php"><button class="btn">Ondekken</button></a>
             </article>
 
             <article class="food-image">
-                <img src="IMG/p8.png" alt="">
+                <img src="IMG/kebab.png" alt="">
                 <article class="inner-text">
-                    <h2>Gegrilde Vlees</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
+                    <h2>Turkse Kebab</h2>
+                    <p>Turkse kebab, een verrukkelijke specialiteit, bestaat uit gegrild vlees, vaak lam of kip. bekijk meer als je geintresseerd bent</p>
                 </article>
+                <a href="PHP/kebab.php"><button class="btn">Ondekken</button></a>
             </article>
 
             <article class="food-image">
-                <img src="IMG/p2.png" alt="">
+                <img src="IMG/spareribs.png" alt="">
                 <article class="inner-text">
-                    <h2>Gegrilde Vlees</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit libero exercitationem consequatur? Hic, voluptatibus.</p>
+                    <h2>Spare Ribs</h2>
+                    <p>Spare ribs, smaakvol gemarineerd en langzaam gegaard tot perfectie, beloven sappig vlees dat van het bot valt.</p>
                 </article>
+                <a href="PHP/spareribs.php"><button class="btn">Ondekken</button></a>
             </article>
     </article>
     </section>

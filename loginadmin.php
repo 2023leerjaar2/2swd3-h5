@@ -52,8 +52,6 @@ require "helper.php";
                   <div class="text-center text-lg-start mt-4 pt-2">
             <p class="small fw-bold mt-2 pt-1 mb-0">Heb je geen account? <a href="registreren.php"
                 class="link-danger">Register</a></p>
-                <p class="small fw-bold mt-2 pt-1 mb-0">log hier in als Admin <a href="loginadmin.php"
-                class="link-danger">Inloggen</a></p>
           </div>
                 </form>
 
