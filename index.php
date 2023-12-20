@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="CSS/style.css">
      <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 <body>
 
@@ -80,8 +79,6 @@
             </article>
     </article>
     </section>
-
-
     
     <section id="Kookboeken" class="kookboeken section-bg">
         <div class="container" data-aos="fade-up">
