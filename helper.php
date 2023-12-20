@@ -54,6 +54,29 @@ function login($data){
       }
     }
 
+    function loginAdmin($data){
+    
+        if(!empty($data['Naam']) && !empty($data['Wachtwoord'])) {
+            try {
+                $uname = $data['Naam'];
+                $pass = $data['Wachtwoord'];
+                $sql = "SELECT * FROM gebruiker WHERE Naam = '$uname' AND Wachtwoord = '$pass'";
+                $result = connect()->query($sql);
+        
+                if($result->num_rows == 1) {
+                    session_start();
+                    $_SESSION['naam'] = $uname;
+                    $_SESSION['loggedIn'] = true;
+                    header("Location: index.php");
+                } else {
+                    echo'<script>alert("Inloggegevens zijn onjuist, probeer het opnieuw.")</script>';
+                }
+            }catch(Exception $e) {
+                echo '<script>alert("Verbiding met database is niet gelukt")</script>';
+             }
+          }
+        }
+
 
     
 function contact($data){
