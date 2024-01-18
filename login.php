@@ -2,7 +2,7 @@
 require "helper.php";
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    loginAdmin($_POST); }
+    login($_POST); }
 ?>
 <!DOCTYPE html>
 <html lang="nl">

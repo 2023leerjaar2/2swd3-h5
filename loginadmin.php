@@ -46,6 +46,10 @@ require "helper.php";
                                 <input type="Wachtwoord" name="Wachtwoord" class="form-control auth-input" placeholder="Wachtwoord">
                             </div>
 
+                            <div class="mb-2">
+                                <input type="admin" name="admin" class="form-control auth-input" placeholder="Roll">
+                            </div>
+
                   <div class="pt-1 mb-4">
                     <button class="btn btn-dark btn-lg btn-block" type='submit' name='submit' value='inloggen'>Login</button>
                   </div>

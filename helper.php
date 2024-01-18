@@ -54,35 +54,42 @@ function login($data){
       }
     }
 
-    function loginAdmin($data){
+        function loginAdmin($data){
     
-        if (isset($data['submit'])) {
-            if (isset($data['Naam'])) {
-                $Naam = $data['Naam'];
-            } else {
-                echo ('<script>alert("Naam is niet ingesteld.")</script>');
-                return;
-            }
-            $wachtwoord = $data['wachtwoord'];
-            $role = 'admin';
-        
-            if ($data['wachtwoord'] != $data['herhaal_wachtwoord']) {
-                echo ('<script>alert("Wachtwoorden komen niet overeen, probeer het opnieuw.")</script>'); 
-                return;
-            }
-        
-            $sql = "INSERT INTO gebruiker (Naam, Wachtwoord, role) VALUES ('$Naam', '$wachtwoord', '$role')";
-        
             try {
-                if (connect()->query($sql)) {
-                    header("Location: receptenAdmin.php");
-                }
-            } catch (Exception $e) {
-                echo "Account could not be added.";
-            }
-        }
-    }
+                $uname = $data['Naam'];
+                $pass = $data['Wachtwoord'];
+                $sql = "SELECT * FROM gebruiker WHERE Naam = '$uname' AND Wachtwoord = '$pass' AND role = '$roll'";
 
+                    if (connect()->query($sql)) {
+                        header("Location: receptenAdmin.php");
+                    }
+                }catch (Exception $e) {
+                    echo "Account could not be added.";
+                }
+            }
+
+            if (isset($data['submit'])) {
+                $wachtwoord = $data['wachtwoord'];
+                $role = 'admin';    
+        }
+
+    function receptenAdmin($data){
+        require('dbconnect.php');
+
+        $sql = "SELECT * FROM recepten";
+        $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                echo "ID: " . $row["id"] . "<br>";
+                echo "Naam: " . $row["naam"] . "<br>";
+                echo "Beschrijving: " . $row["beschrijving"] . "<br><br>";
+            }
+        } else {
+            echo "Geen recepten gevonden";
+    }
+}
 
     
 function contact($data){
